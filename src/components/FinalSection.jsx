@@ -143,15 +143,17 @@ export default function FinalSection() {
         viewport={{ once: true, margin: '-100px' }}
       >
         <motion.p variants={lineVariants} className="text-xl md:text-2xl font-light text-[#f4f3ec]/85">
-          I didn't build this because I expected anything.
+          Consider this less of a museum...
+        </motion.p>
+        <motion.p variants={lineVariants} className="text-xl md:text-2xl font-light text-[#f4f3ec]/85">
+          and more of an invitation.
         </motion.p>
 
-        <motion.div variants={lineVariants} className="space-y-4">
+        <motion.div variants={lineVariants} className="space-y-4 pt-4">
+          <p className="text-xl md:text-2xl font-light text-[#f4f3ec]/85">To smile.</p>
+          <p className="text-xl md:text-2xl font-light text-[#f4f3ec]/85">To remember.</p>
           <p className="text-xl md:text-2xl font-light text-[#f4f3ec]/85">
-            I built it because some people deserve to know
-          </p>
-          <p className="text-2xl md:text-3xl font-medium tracking-wide text-glow text-[#f4f3ec]">
-            the place they still have in someone's heart.
+            And maybe... to write a few new memories together.
           </p>
         </motion.div>
 
@@ -160,8 +162,8 @@ export default function FinalSection() {
           variants={lineVariants}
           className="pt-10 flex flex-col items-center gap-4"
         >
-          <p className="text-xl md:text-2xl font-light text-[#f4f3ec]/50 italic">
-            Thank you for being part of my story, Manya.
+          <p className="text-2xl md:text-3xl font-medium tracking-wide text-glow text-[#f4f3ec]">
+            For Manya, I love you, prolly more than ever
           </p>
           
           {/* Final Heart Icon */}
