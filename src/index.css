@@ -1,0 +1,81 @@
+@import "tailwindcss";
+
+@theme {
+  --font-caveat: 'Caveat', cursive;
+  --font-dancing: 'Dancing Script', cursive;
+  --font-serif-cormorant: 'Cormorant Garamond', serif;
+  --font-sans-inter: 'Inter', sans-serif;
+
+  --color-museum-bg-start: #050816;
+  --color-museum-bg-end: #0B1026;
+  --color-museum-text: #f4f3ec;
+}
+
+/* Custom Scrollbar */
+::-webkit-scrollbar {
+  width: 6px;
+  height: 6px;
+}
+::-webkit-scrollbar-track {
+  background: #050816;
+}
+::-webkit-scrollbar-thumb {
+  background: rgba(244, 243, 236, 0.2);
+  border-radius: 9999px;
+}
+::-webkit-scrollbar-thumb:hover {
+  background: rgba(244, 243, 236, 0.4);
+}
+
+html {
+  scroll-behavior: smooth;
+  background-color: #050816;
+}
+
+body {
+  margin: 0;
+  padding: 0;
+  font-family: 'Inter', sans-serif;
+  background: radial-gradient(circle at center, #0B1026 0%, #050816 100%);
+  color: #f4f3ec;
+  min-height: 100vh;
+  overflow-x: hidden;
+}
+
+/* Global custom classes if needed */
+.glass {
+  background: rgba(255, 255, 255, 0.03);
+  backdrop-filter: blur(12px);
+  -webkit-backdrop-filter: blur(12px);
+  border: 1px solid rgba(255, 255, 255, 0.08);
+  box-shadow: 0 8px 32px 0 rgba(0, 0, 0, 0.37);
+}
+
+.glass-hover:hover {
+  background: rgba(255, 255, 255, 0.06);
+  border-color: rgba(255, 255, 255, 0.15);
+  box-shadow: 0 12px 40px 0 rgba(255, 255, 255, 0.05);
+}
+
+.text-glow {
+  text-shadow: 0 0 10px rgba(244, 243, 236, 0.4);
+}
+
+.star-glow {
+  filter: drop-shadow(0 0 4px rgba(255, 255, 255, 0.8));
+}
+
+/* Selection */
+::selection {
+  background: rgba(244, 243, 236, 0.2);
+  color: #fff;
+}
+
+/* Hide default horizontal scrollbar for clean design but keep scroll functional */
+.no-scrollbar::-webkit-scrollbar {
+  display: none;
+}
+.no-scrollbar {
+  -ms-overflow-style: none;  /* IE and Edge */
+  scrollbar-width: none;  /* Firefox */
+}
